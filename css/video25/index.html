@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Lists using CSS</title>
+    <style>
+      /* marker means number / dot / circle which appear before list item */
+      /* taking marker inside with list-style-position property will result into showing marker inside list block box*/
+      /* default marker position is outside */
+      .inside_marker {
+        list-style: devanagari;
+        border: 2px solid black;
+        list-style-position: inside;
+        background-color: aqua;
+      }
+      .default_position_marker {
+        list-style: devanagari;
+        border: 2px solid black;
+        background-color: aquamarine;
+      }
+      .flexclass {
+        list-style: none;
+        display: flex;
+        background-color: aliceblue;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="inside_marker">Home</li>
+        <li class="inside_marker">About</li>
+        <li class="inside_marker">Contact</li>
+      </ul>
+      <ul>
+        <li class="default_position_marker">Home</li>
+        <li class="default_position_marker">About</li>
+        <li class="default_position_marker">Contact</li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="flexclass">
+        <li class="flexclass">Home</li>
+        <li class="flexclass">About</li>
+        <li class="flexclass">Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
