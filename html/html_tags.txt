@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5, h6 - heading tag 1 to 6.
+
+p - pragraph tag.
+
+title - define title of web page.
+
+link - to link css style sheet to html page.
+
+script - to link java script file to html page.
+
+a - a stands for anchor tag, this is used to add links in web page
+
+img - img tag is used to add image to web page.
+
+br - line break 
+
+table - as name suggest this tag is used to create table in html.
+
+tr - this tag stands for table row, it is used to create table row.
+
+th - th stands for table heading. It is used for defining table heading.
+
+td - used to defining table cells in html. td stand for table data.
+
+ul - used for defining unordered list. list marker will be circle, disk, suqare
+
+ol - used for defining ordered list. list type wil be 1,A,a,I,i
+
+li - is declared inside 'ul' or 'ol' tags. li means list item
+
+input - This tag is used to take input from user. Input types are text, radio button, check box etc.
+
+lable - This tag is used with id of perticular element.
+
+textarea - The textarea element represents a multiline plain text edit control for the element's raw value.
+
+select - the select element represents a control for selecting amongst a set of options.
+
+option - this tag is used with select tag to show option values for select tag.
+
+video - this tag is used for showing and playing video in html page
+
+audio - this tag is used for showing and playing audio in html page
+
+header - The header element represents introductory content
+
+footer - The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element.
+
+nav - The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
+
+main - The main element represents the main content of the body of a document or application.
