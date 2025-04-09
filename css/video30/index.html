@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* to define variables we can refer below example. We can use variables not only for colors but also for other things */
+      :root {
+        --list_color: aqua;
+        --content_bg_color: rgb(8, 214, 222);
+        --border_size: 1px;
+        --border_color: rgb(130, 181, 161);
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        background-color: var(--list_color);
+        border: var(--border_size) solid var(--border_color);
+      }
+      ul li {
+        padding: 5px;
+      }
+      .content {
+        background-color: var(--content_bg_color);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        minima nostrum voluptatem facere maiores ad nesciunt earum explicabo
+        mollitia. Quod ipsum autem fugit accusantium vel iure. Voluptate at
+        neque officia?
+      </p>
+    </div>
+  </body>
+</html>
