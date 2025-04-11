@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video 37 exercise 5</title>
+    <style>
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+      }
+      .MainContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: solid black 1px;
+        height: 700px;
+      }
+      .NavBar {
+        background-color: pink;
+        border: 1px solid black;
+      }
+      ul {
+        background-color: rgb(229, 146, 160);
+        list-style: none;
+        display: flex;
+      }
+      ul li {
+        background-color: rgb(238, 91, 116);
+        padding-left: 10px;
+      }
+      .ParentBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: green;
+        border: 1px solid black;
+        height: 250px;
+        width: 500px;
+        margin-left: 40px;
+        /* position: relative;
+        top: 10px;
+        left: 7%; */
+      }
+      .box {
+        height: 140px;
+        width: 140px;
+        border: 1px solid black;
+        /* margin: 50px; */
+      }
+      .box:nth-child(1) {
+        background-color: pink;
+        /* position: relative;
+        top: 1px; */
+      }
+      .box:nth-child(2) {
+        background-color: skyblue;
+        /* position: relative;
+        bottom: 189px;
+        left: 250px; */
+      }
+
+      .Content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 50px;
+        width: 500px;
+        margin-left: 40px;
+        /* position: relative;
+        right: -20px; */
+        /* text-align: center; */
+      }
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        position: fixed;
+        right: 19px;
+        bottom: 1px;
+      }
+      footer {
+        border: 1px solid black;
+        height: 100px;
+        width: 500px;
+        /* position: relative;
+        bottom: -90px;
+        right: -39px; */
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="NavBar">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="MainContainer">
+      <div class="ParentBox">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="Content">welcome to sigma web devlopement express</div>
+      <img src="image.png" alt="" />
+      <footer></footer>
+    </div>
+  </body>
+</html>
