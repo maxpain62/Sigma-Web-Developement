@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physiotherapy Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: 387px 500px;
+      }
+      .suncontainer {
+        display: grid;
+        /* border: 1px solid black; */
+        background-color: rgba(227, 243, 243, 0.867);
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 6fr;
+        height: 387px;
+      }
+      .suncontainer2 {
+        background-color: rgba(227, 243, 243, 0.867);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .navigation {
+        list-style-type: none;
+        display: flex;
+        /* padding: 5px 5px ; */
+      }
+      .subnavigation {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .BookAppountment {
+        background-color: rgb(9, 205, 205);
+        height: 50px;
+        width: 200px;
+        border: none;
+        color: rgb(255, 253, 253);
+        justify-self: end;
+        height: 96px;
+        font-weight: bolder;
+        font-size: 20px;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      .BookAppountment:hover {
+        background-color: rgb(18, 178, 178);
+      }
+      .BookAppountment:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      .leftside {
+        background-color: rgb(25, 25, 69);
+        color: rgb(9, 205, 205);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      img {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        height: 300px;
+        width: 1323px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      a:link {
+        color: black;
+      }
+      a:active {
+        color: black;
+      }
+      .card {
+        text-align: center;
+        height: 230px;
+        width: 230px;
+        /* border: 1px solid; */
+        padding: 10px;
+        /* margin: 10px; */
+        text-decoration: underline;
+      }
+      .card1 {
+        background-color: rgb(9, 205, 205);
+        color: rgb(237, 232, 232);
+      }
+      .card2 {
+        background-color: rgb(226, 230, 230);
+      }
+      .card3 {
+        background-color: rgb(25, 25, 69);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="suncontainer">
+        <div class="leftside">
+          <p>medical</p>
+          <p>Health</p>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <a href=""><li class="subnavigation">Home</li></a>
+            <a href=""><li class="subnavigation">Location</li></a>
+            <a href=""><li class="subnavigation">Contact</li></a>
+            <a href=""><li class="subnavigation">Login / Sign Up</li></a>
+          </ul>
+        </nav>
+        <button class="BookAppountment">Book Appointment</button>
+        <img src="image1.png" alt="" />
+      </div>
+      <div class="suncontainer2">
+        <div class="card card1">
+          <h2>Contact</h2>
+          9812345678
+        </div>
+        <div class="card card2">
+          <h2>Book Appointment</h2>
+          View Timetable
+        </div>
+        <div class="card card3">
+          <h2>Opening Hours</h2>
+          monnday - saturday 7 PM to 9 PM
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
