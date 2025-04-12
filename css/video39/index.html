@@ -10,20 +10,82 @@
         grid-template-columns: 100px 100px;
         grid-template-rows: 100px 100px 100px;
         border: 1px solid black;
+        gap: 5px;
       }
       .item {
+        border: 1px solid black;
+      }
+      .item4 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+      }
+      .item1 {
+        grid-row: 2/4;
+        grid-column: 1/2;
+      }
+      .container2 {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "Article sidebar"
+          "footer footer";
+        grid-template-columns: 2fr 1fr;
+        border: 1px solid black;
+        row-gap: 1px;
+        margin-top: 10px;
+        padding: 5px;
+      }
+      .container2_item {
+        border: 1px solid black;
+      }
+      .container2 > div.header {
+        grid-area: header;
+        text-align: center;
+      }
+      .container2 > div.article {
+        grid-area: Article;
+        text-align: center;
+      }
+      .container2 > div.sidebar {
+        grid-area: sidebar;
+        text-align: center;
+      }
+      .container2 > div.footerarea {
+        grid-area: footer;
+        text-align: center;
+      }
+      .container2 > div {
         border: 1px solid black;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item">1</div>
+      <div class="item item1">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
-      <div class="item">4</div>
+      <div class="item item4">4</div>
       <div class="item">5</div>
       <div class="item">6</div>
+    </div>
+    <div class="container2">
+      <div class="header">My Heading</div>
+      <div class="article">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+        obcaecati? Impedit cum nobis exercitationem facere quidem veniam, amet
+        asperiores natus architecto blanditiis, repellat doloremque sed laborum
+        doloribus. Repellat, animi laboriosam.
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li>link1</li>
+          <li>link2</li>
+          <li>link3</li>
+        </ul>
+      </div>
+      <div class="footerarea">this is footer</div>
+      <!-- <div class="container2_item">5</div>
+      <div class="container2_item">6</div> -->
     </div>
   </body>
 </html>
