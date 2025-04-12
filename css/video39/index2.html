@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container2 {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "Article sidebar"
+          "footer footer";
+        grid-template-columns: 2fr 1fr;
+        border: 1px solid black;
+        row-gap: 1px;
+        margin-top: 10px;
+        padding: 5px;
+      }
+      .container2_item {
+        border: 1px solid black;
+      }
+      .container2 > div.header {
+        grid-area: header;
+        text-align: center;
+      }
+      .container2 > div.article {
+        grid-area: Article;
+        text-align: center;
+      }
+      .container2 > div.sidebar {
+        grid-area: sidebar;
+        text-align: center;
+      }
+      .container2 > div.footerarea {
+        grid-area: footer;
+        text-align: center;
+      }
+      .container2 > div {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="header">My Heading</div>
+      <div class="article">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+        obcaecati? Impedit cum nobis exercitationem facere quidem veniam, amet
+        asperiores natus architecto blanditiis, repellat doloremque sed laborum
+        doloribus. Repellat, animi laboriosam.
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li>link1</li>
+          <li>link2</li>
+          <li>link3</li>
+        </ul>
+      </div>
+      <div class="footerarea">this is footer</div>
+      <!-- <div class="container2_item">5</div>
+        <div class="container2_item">6</div> -->
+    </div>
+  </body>
+</html>
