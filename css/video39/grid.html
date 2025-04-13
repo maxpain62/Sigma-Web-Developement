@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid 3</title>
+    <style>
+      .heading>img.image1 {
+        grid-area: image;
+        height: 79.6px;
+        width: 79.6px;
+      }
+      .heading>img.image2 {
+        grid-area: image2;
+        height: 79.6px;
+        width: 79.6px;
+      }
+      .heading {
+
+        margin-bottom: 2px;
+        border: 1px solid;
+        display: grid;
+        grid-template-areas: "image heading image2";
+        grid-template-columns: 1fr 3fr 1fr;
+      }
+      .container {
+        border: 1px solid;
+        display: grid;
+        grid-template-areas: "unav unav" "nav article" "footer footer";
+        grid-template-columns: 1fr 4fr;
+        margin-bottom: 2px;
+      }
+      div.heading {
+        grid-area: heading;
+        text-align: left;
+      }
+      .container > div.nav {
+        grid-area: nav;
+        text-align: left;
+      }
+      .container > div.article {
+        grid-area: article;
+        text-align: left;
+      }
+      div.footer {
+        grid-area: footer;
+        text-align: center;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <img class="imageclass image1" src="image1.png" alt="">
+      <h1>This is heading</h1>
+      <img class="imageclass image2" src="image1.png" alt="">
+    </div>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>Article</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="article">
+        <p>
+            <h3>article1</h3>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          necessitatibus quod culpa assumenda blanditiis maiores provident
+          architecto rerum impedit repellendus?
+        </p>
+        <p>
+            <h3>article2</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          optio earum nam facilis animi reprehenderit?
+        </p>
+        <p>
+            <h3>article3</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis explicabo, expedita dolor aut eos est accusamus quia quaerat, quasi nam nemo molestias cumque libero, laudantium deleniti cum reprehenderit! Atque.
+        </p>
+      </div>
+    </div>
+    <div class="footer"><h1>This is footer</h1></div>
+  </body>
+</html>
+
