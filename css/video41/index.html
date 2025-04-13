@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Exercise 6 Navbar using Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      header > div.Navbar > ul {
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+      .left {
+        width: 176px;
+        height: 56px;
+        padding-right: 300px;
+        /* align-self: flex-start; */
+      }
+      .right {
+        padding-left: 30px;
+      }
+      .icon {
+        height: 25px;
+        width: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="Navbar">
+        <ul>
+          <li><img class="left" src="logo.png" alt="" /></li>
+          <li class="right">Products</li>
+          <li class="right">For Business</li>
+          <li class="right">Resources</li>
+          <li class="right">Academic Licemsing</li>
+          <li class="right">Our Company</li>
+          <li><img class="right icon" src="translate.jpg" alt="" /></li>
+          <li>
+            <img class="right icon" src="search_icon.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>
