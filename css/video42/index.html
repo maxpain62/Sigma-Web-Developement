@@ -11,6 +11,7 @@
         width: 50px;
         border: 1px solid;
         transform: scale(2, 2);
+
         /* transform: translate(120px, 50%); */
         /* transform: rotateX(50deg); */
         /* transform: rotateY(50deg); */
@@ -19,7 +20,8 @@
       }
       button:hover {
         /* transform: translateX(10px) rotate(10deg) translateY(5px); */
-        transform: matrix(1, 2, 3, 4, 5, 6);
+        /* transform: matrix(1, 2, 3, 4, 5, 6); */
+        cursor: pointer;
       }
       button:active {
         transform: rotate(3deg);
@@ -29,7 +31,7 @@
   <body>
     <div class="container">
       <div class="box">BOX</div>
-      <!-- <button>Button</button> -->
+      <button>Button</button>
     </div>
   </body>
 </html>
