@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transforms MasterClass</title>
+    <style>
+      .box:hover {
+        margin: 100px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid;
+        transform: scale(2, 2);
+        /* transform: translate(120px, 50%); */
+        /* transform: rotateX(50deg); */
+        /* transform: rotateY(50deg); */
+        /* transform: rotateZ(10deg); */
+        /* transform: rotate(10deg); */
+      }
+      button:hover {
+        /* transform: translateX(10px) rotate(10deg) translateY(5px); */
+        transform: matrix(1, 2, 3, 4, 5, 6);
+      }
+      button:active {
+        transform: rotate(3deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">BOX</div>
+      <!-- <button>Button</button> -->
+    </div>
+  </body>
+</html>
