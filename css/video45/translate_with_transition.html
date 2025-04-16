@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>translate with transition</title>
+    <style>
+      .parent {
+        border: 1px solid;
+        height: 500px;
+        width: 500px;
+        position: relative;
+      }
+      .parent > div {
+        border: 1px solid;
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        transition: translate 1s ease-out 0s;
+      }
+      /* ############################ */
+      .box1 {
+        bottom: 80%;
+        left: 10%;
+      }
+      .box2 {
+        bottom: 80%;
+        left: 40%;
+      }
+      .box3 {
+        bottom: 80%;
+        left: 70%;
+      }
+      .box4 {
+        bottom: 50%;
+        left: 70%;
+      }
+      .box5 {
+        bottom: 20%;
+        left: 70%;
+      }
+      .box6 {
+        bottom: 20%;
+        left: 40%;
+      }
+      .box7 {
+        bottom: 20%;
+        left: 10%;
+      }
+      .box8 {
+        bottom: 50%;
+        left: 10%;
+      }
+      /* ############################ */
+      .box1:hover {
+        background-color: red;
+        translate: -50% -50%;
+      }
+      .box2:hover {
+        translate: 0% -100%;
+      }
+      .box3:hover {
+        translate: 50% -50%;
+      }
+      .box4:hover {
+        translate: 100%;
+      }
+      .box5:hover {
+        translate: 50% 50%;
+      }
+      .box6:hover {
+        translate: 0% 100%;
+      }
+      .box7:hover {
+        translate: -50% 50%;
+      }
+      .box8:hover {
+        translate: -50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1">1 -50% -50% up left corner</div>
+      <div class="box box2">2 0% -100% up</div>
+      <div class="box box3">3 50% -50% up right corner</div>
+      <div class="box box4">4 100% right</div>
+      <div class="box box5">5 50% 50% down right</div>
+      <div class="box box6">6 0% 100% down</div>
+      <div class="box box7">7 -50% 50% down left</div>
+      <div class="box box8">8 -50% left</div>
+    </div>
+  </body>
+</html>
