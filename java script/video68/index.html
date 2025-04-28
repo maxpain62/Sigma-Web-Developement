@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .commonclass {
+        height: 20px;
+        width: 20px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 20px;
+      }
+      body {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="specialbox" class="commonclass box">box1</div>
+      <div class="commonclass box">box2</div>
+      <div class="commonclass box">box3</div>
+      <div class="commonclass box">box4</div>
+      <div class="commonclass box">box5</div>
+    </div>
+    <div class="container2">
+      <div class="match commonclass box2">box1</div>
+      <div class="commonclass box2">box2</div>
+      <div class="commonclass box2">box3</div>
+    </div>
+    <div class="forloopcontainer">
+      <div class="commonclass box3">box1</div>
+      <div class="commonclass box3">box2</div>
+      <div class="commonclass box3">box3</div>
+    </div>
+    <div class="individualelements">
+      <div class="commonclass individualbox">box1</div>
+      <div class="commonclass individualbox">box2</div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
