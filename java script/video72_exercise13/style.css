@@ -1,0 +1,28 @@
+.container {
+  background-color: rgb(36, 35, 35);
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  color: white;
+}
+.ImageDiv {
+  position: relative;
+}
+img {
+  border-radius: 5px;
+}
+.innercontainer {
+  display: grid;
+}
+.InfoDiv {
+  display: grid;
+}
+.VideoDuration {
+  position: absolute;
+  background-color: black;
+  bottom: 11%;
+  left: 79%;
+  border-radius: 5px;
+  padding: 4px;
+  opacity: 75%;
+}
