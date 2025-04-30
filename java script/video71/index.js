@@ -33,7 +33,6 @@ console.log("Inserting element with js");
 let DivElement = document.createElement("div");
 DivElement.setAttribute("class", "DivElement");
 DivElement.innerHTML = "This line is inserted with js code";
-
 document.querySelector(".container").append(DivElement);
 
 //replacing element with new element
